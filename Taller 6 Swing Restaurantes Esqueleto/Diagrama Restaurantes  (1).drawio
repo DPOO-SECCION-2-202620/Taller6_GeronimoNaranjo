@@ -1,0 +1,198 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="mXyZHW8klArSpaoHxREk">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;strokeWidth=1.4;connectable=0;allowArrows=0;recursiveResize=0;expand=0;" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;Restaurante&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; color: rgb(40, 95, 72); padding: 0px 3px 7px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;- nombre: String&lt;br&gt;- calificacion: int&lt;br&gt;- coordenadaX: int&lt;br&gt;- coordenadaY: int&lt;br&gt;+ visitado: boolean&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;-------------------------------------------------------------------------------------------------------&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt; + Restaurante(nombre: String, calificacion: int, x: int, y: int, visitado: boolean)&lt;br&gt;+ getNombre(): String&lt;br&gt;+ getCalificacion(): int&lt;br&gt;+ getX(): int&lt;br&gt;+ getY(): int&lt;br&gt;+ isVisitado(): boolean&lt;br&gt;+ toString(): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="390" x="570" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=#ffffff;strokeColor=light-dark(#285f48, #ffffff);strokeWidth=1.4;" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;Diario&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; color: rgb(40, 95, 72); padding: 0px 3px 7px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;- restaurantes: List&amp;lt;Restaurante&amp;gt;}&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;---------------------------------------------------------------------------------&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;+ Diario()&lt;br&gt;+ getRestaurantes(completos: boolean): List&amp;lt;Restaurante&amp;gt;&lt;br&gt;+ agregarRestaurante(restaurante: Restaurante): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="154.31" width="310" x="1090" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-4" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.469;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="TGCr6RwUMGel-ufWRq5h-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-5" connectable="0" parent="TGCr6RwUMGel-ufWRq5h-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="0...*" vertex="1">
+          <mxGeometry relative="1" x="0.2034" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-12" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-201" y="210" />
+            </Array>
+            <mxPoint x="570" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-13" connectable="0" parent="TGCr6RwUMGel-ufWRq5h-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Usa parametro" vertex="1">
+          <mxGeometry relative="1" x="-0.1318" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=default;strokeColor=default;strokeWidth=1.4;" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;PanelDetallesRestaurante&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; padding: 0px 3px 7px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;«extends JPanel»&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;&lt;span&gt;- labNombre: JLabel&lt;br&gt;- labCalificacion: JLabel&lt;br&gt;- chkVisitado: JCheckBox&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;&lt;span&gt;---------------------------------------------------------------------------------------------------------&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;&lt;span&gt;+ PanelDetallesRestaurante()&lt;br&gt;- actualizarRestaurante(nombre: String, calificacion: int, visitado: boolean): void&lt;br&gt;+ actualizarRestaurante(r: Restaurante): void&lt;br&gt;- buscarIconoCalificacion(calificacion: int): ImageIcon&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="239.87" width="400" x="-401" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-14" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-15" connectable="0" parent="TGCr6RwUMGel-ufWRq5h-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="0...*" vertex="1">
+          <mxGeometry relative="1" x="-0.2776" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-22" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="TGCr6RwUMGel-ufWRq5h-9">
+          <mxGeometry relative="1" x="0.0697" as="geometry">
+            <Array as="points">
+              <mxPoint x="535" y="740" />
+              <mxPoint x="1692.5" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-24" connectable="0" parent="TGCr6RwUMGel-ufWRq5h-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Lisrtas" vertex="1">
+          <mxGeometry relative="1" x="0.2024" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=#ffffff;strokeColor=default;strokeWidth=1.4;fontColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;PanelLista&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; padding: 0px 3px 7px;&quot;&gt;«extends JPanel · implements ListSelectionListener»&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;- listaDeRestaurantes: JList&amp;lt;Restaurante&amp;gt;&lt;br&gt;- dataModel: DefaultListModel&amp;lt;Restaurante&amp;gt;&lt;br&gt;- ventanaPrincipal: VentanaPrincipal&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;+ PanelLista(ventanaPrincipal: VentanaPrincipal)&lt;br&gt;+ actualizarRestaurantes(restaurantes: List&amp;lt;Restaurante&amp;gt;): void&lt;br&gt;+ valueChanged(e: ListSelectionEvent): void&lt;br&gt;+ seleccionarRestaurante(restaurante: Restaurante): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="239.87" width="330" x="370" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=default;strokeColor=default;strokeWidth=1.4;" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;PanelBotones&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; padding: 0px 3px 7px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;«extends JPanel · implements ActionListener»&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;&lt;div style=&quot;line-height: 1.35; padding: 5px 7px;&quot;&gt;- Crear: String {static, final}&lt;/div&gt;&lt;div style=&quot;line-height: 1.35; padding: 5px 7px;&quot;&gt;- Cerrar: String {static, final}&lt;/div&gt;&lt;div style=&quot;line-height: 1.35; padding: 5px 7px;&quot;&gt;- butNuevo: JButton&lt;/div&gt;&lt;div style=&quot;line-height: 1.35; padding: 5px 7px;&quot;&gt;- butVerTodos: JButton&lt;/div&gt;&lt;div style=&quot;line-height: 1.35; padding: 5px 7px;&quot;&gt;- ventanaPrincipal: VentanaAgregarRestaurante&lt;/div&gt;&lt;div style=&quot;line-height: 1.35; padding: 5px 7px;&quot;&gt;--------------------------------------------------------------------------------------------------------&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;+ PanelBotonesAgregar(ventanaPrincipal: VentanaAgregarRestaurante)&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 1.35; padding: 5px 7px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;+ actionPerformed(e: ActionEvent): void&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="410" x="980" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-18" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="TGCr6RwUMGel-ufWRq5h-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-19" connectable="0" parent="TGCr6RwUMGel-ufWRq5h-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Mundo" vertex="1">
+          <mxGeometry relative="1" x="-0.1867" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-20" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=none;endFill=0;startArrow=block;startFill=0;">
+          <mxGeometry relative="1" x="-0.0094" as="geometry">
+            <Array as="points">
+              <mxPoint x="1795" y="770" />
+              <mxPoint x="20" y="770" />
+            </Array>
+            <mxPoint y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-23" connectable="0" parent="TGCr6RwUMGel-ufWRq5h-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Detalles" vertex="1">
+          <mxGeometry relative="1" x="-0.436" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-7" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="TGCr6RwUMGel-ufWRq5h-25">
+          <mxGeometry relative="1" x="0.0279" as="geometry">
+            <Array as="points">
+              <mxPoint x="1840" y="1069.9" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-8" connectable="0" parent="0_gwSyKwkV4HwF5Idxo0-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="0...1" vertex="1">
+          <mxGeometry relative="1" x="0.4064" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-15" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="0_gwSyKwkV4HwF5Idxo0-10">
+          <mxGeometry relative="1" x="0.1486" as="geometry">
+            <Array as="points">
+              <mxPoint x="1970" y="1262.2" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-16" connectable="0" parent="0_gwSyKwkV4HwF5Idxo0-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="0...*" vertex="1">
+          <mxGeometry relative="1" x="-0.1075" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=default;strokeColor=light-dark(#FFFFFF,#FFFFFF);strokeWidth=1.4;" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;Ventana Principal&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; padding: 0px 3px 7px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;«extends jFrames»&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;&lt;div style=&quot;line-height: 1.35; padding: 5px 7px;&quot;&gt;&lt;div style=&quot;line-height: 1.35; padding: 5px 7px;&quot;&gt;- mundo: Diario&lt;br&gt;- pBotones: PanelBotones&lt;br&gt;- pDetalles: PanelDetallesRestaurante&lt;br&gt;- pLista: PanelLista&lt;br&gt;- ventanaMapa: VentanaMapa&lt;br&gt;- ventanaAgregar: VentanaAgregarRestaurante&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 1.35; padding: 5px 7px;&quot;&gt;&lt;span&gt;--------------------------------------------------------------------------------------------------------&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;+ VentanaPrincipal(elDiario: Diario)&lt;/span&gt;&lt;/div&gt;+ mostrarVetanaNuevoRestaurante(): void&lt;br&gt;+ mostrarVentanaMapa(): void&lt;br&gt;+ agregarRestaurante(nombre: String, calificacion: int, x: int, y: int, visitado: boolean): void&lt;br&gt;+ getRestaurantes(completos: boolean): List&amp;lt;Restaurante&amp;gt;&lt;br&gt;- actualizarRestaurantes(): void&lt;br&gt;+ cambiarRestauranteSeleccionado(seleccionado: Restaurante): void&lt;br&gt;+ main(args: String[]): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="339.87" width="410" x="1590" y="370.13" as="geometry" />
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-16" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.989;entryY=0.439;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="TGCr6RwUMGel-ufWRq5h-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-17" connectable="0" parent="TGCr6RwUMGel-ufWRq5h-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Botones" vertex="1">
+          <mxGeometry relative="1" x="-0.0824" y="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=#ffffff;strokeColor=light-dark(#FFFFFF,#FFFFFF);strokeWidth=1.4;fontColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;&lt;span&gt;VentanaAgregarRestaurante&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; padding: 0px 3px 7px;&quot;&gt;«extends JFrame»&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;- panelDetalles: PanelEditarRestaurante&lt;br&gt;- panelBotones: PanelBotonesAgregar&lt;br&gt;- panelMapa: PanelMapaAgregar&lt;br&gt;- ventanaPrincipal: VentanaPrincipal&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;------------------------------------------------------------------------------&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;+ VentanaAgregarRestaurante(principal: VentanaPrincipal)&lt;br&gt;+ agregarRestaurante(): void&lt;br&gt;+ cerrarVentana(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="239.87" width="300" x="320" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-1" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="TGCr6RwUMGel-ufWRq5h-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-2" connectable="0" parent="0_gwSyKwkV4HwF5Idxo0-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Panel Detalles" vertex="1">
+          <mxGeometry relative="1" x="-0.0768" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=default;strokeColor=light-dark(#FFFFFF,#FFFFFF);strokeWidth=1.4;" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;PanelEditarRestaurante&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; padding: 0px 3px 7px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;«extends JPanel»&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;- txtNombre: JTextField&lt;br&gt;- cbbCalificacion: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- cbbVisitado: JComboBox&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;---------------------------------------------------&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;+ PanelEditarRestaurante()&lt;br&gt;+ getVisitado(): boolean&lt;br&gt;+ getCalificacion(): int&lt;br&gt;+ getNombre(): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="239.87" width="200" x="-270" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=#ffffff;strokeColor=light-dark(#FFFFFF,#FFFFFF);strokeWidth=1.4;" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;PanelBotonesAgregar&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; padding: 0px 3px 7px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));&quot;&gt;«extends JPanel · implements ActionListener»&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;&lt;span&gt;- Crear: String {static final}&lt;br&gt;- Cerrar: String {static final}&lt;br&gt;- butNuevo: JButton&lt;br&gt;- butCerrar: JButton&lt;br&gt;- ventanaPrincipal: VentanaAgregarRestaurante&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;&lt;span&gt;-------------------------------------------------------------------------------------------------&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;&lt;span&gt;+ PanelBotonesAgregar(ventanaPrincipal: VentanaAgregarRestaurante)&lt;br&gt;+ actionPerformed(e: ActionEvent): void&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="239.87" width="370" x="-360" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-3" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="TGCr6RwUMGel-ufWRq5h-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-5" connectable="0" parent="0_gwSyKwkV4HwF5Idxo0-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Panel Mapa" vertex="1">
+          <mxGeometry relative="1" x="-0.0286" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TGCr6RwUMGel-ufWRq5h-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=#ffffff;strokeColor=light-dark(#FFFFFF,#FFFFFF);strokeWidth=1.4;fontColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;PanelMapaAgregar&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; padding: 0px 3px 7px;&quot;&gt;«extends JPanel · implements MouseListener»&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;- labMapa: JLabel&lt;br&gt;- x: int&lt;br&gt;- y: int&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;--------------------------------------------------------&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;+ PanelMapaAgregar()&lt;br&gt;+ getCoordenadas(): int[]&lt;br&gt;+ paint(g: Graphics): void&lt;br&gt;+ mouseClicked(e: MouseEvent): void&lt;br&gt;+ mousePressed(e: MouseEvent): void&lt;br&gt;+ mouseReleased(e: MouseEvent): void&lt;br&gt;+ mouseEntered(e: MouseEvent): void&lt;br&gt;+ mouseExited(e: MouseEvent): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="260" width="220" x="-285" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-4" edge="1" parent="1" source="TGCr6RwUMGel-ufWRq5h-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.013;entryY=0.62;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="TGCr6RwUMGel-ufWRq5h-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="1098.72" />
+              <mxPoint x="80" y="1098.72" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-6" connectable="0" parent="0_gwSyKwkV4HwF5Idxo0-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Panel Botones" vertex="1">
+          <mxGeometry relative="1" x="-0.5144" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-13" edge="1" parent="1" source="0_gwSyKwkV4HwF5Idxo0-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;">
+          <mxGeometry relative="1" x="-0.0215" as="geometry">
+            <Array as="points">
+              <mxPoint x="945" y="700" />
+              <mxPoint x="910" y="700" />
+            </Array>
+            <mxPoint x="910" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-14" connectable="0" parent="0_gwSyKwkV4HwF5Idxo0-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="0...*" vertex="1">
+          <mxGeometry relative="1" x="-0.3627" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=#ffffff;strokeColor=light-dark(#FFFFFF,#FFFFFF);strokeWidth=1.4;fontColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;PanelMapaVisualizar&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; padding: 0px 3px 7px;&quot;&gt;«extends JPanel»&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;- labMapa: JLabel&lt;br&gt;- restaurantes: List&amp;lt;Restaurante&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;--------------------------------------------------------------------------------------&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;+ PanelMapaVisualizar()&lt;br&gt;+ paint(g: Graphics): void&lt;br&gt;+ actualizarMapa(nuevosRestaurantes: List&amp;lt;Restaurante&amp;gt;): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190.97" width="330" x="780" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=0;overflow=hidden;fillColor=#ffffff;strokeColor=light-dark(#FFFFFF,#FFFFFF);strokeWidth=1.4;fontColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 1px 4px;&quot;&gt;VentanaMapa&lt;/div&gt;&lt;div style=&quot;text-align: center; font-size: 10px; padding: 0px 3px 7px;&quot;&gt;«extends JFrame · implements ActionListener»&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;- VISITADOS: String {static final}&lt;br&gt;- TODOS: String {static final}&lt;br&gt;- panelMapa: PanelMapaVisualizar&lt;br&gt;- radioTodos: JRadioButton&lt;br&gt;- radioVisitados: JRadioButton&lt;br&gt;- ventanaPrincipal: VentanaPrincipal&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;--------------------------------------------------------------------------------------------------------------------&lt;/div&gt;&lt;div style=&quot;font-size:11px;line-height:1.35;padding:5px 7px;&quot;&gt;+ VentanaMapa(ventanaPrincipal: VentanaPrincipal, restaurantes: List&amp;lt;Restaurante&amp;gt;)&lt;br&gt;+ actionPerformed(e: ActionEvent): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="264.31" width="440" x="1370" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-11" edge="1" parent="1" source="0_gwSyKwkV4HwF5Idxo0-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.002;entryY=0.546;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="0_gwSyKwkV4HwF5Idxo0-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-12" connectable="0" parent="0_gwSyKwkV4HwF5Idxo0-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Panel Mapa" vertex="1">
+          <mxGeometry relative="1" x="-0.0079" y="-3" as="geometry">
+            <mxPoint x="-1" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0_gwSyKwkV4HwF5Idxo0-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;h1&gt;Instrucciones para ejecutar la aplicación&lt;/h1&gt;&lt;div&gt;Para ejecutar la aplicación es necesario tener instalado Java (JDK) y Eclipse IDE. También es importante mantener las carpetas src e imagenes dentro del proyecto, ya que contienen el código y las imágenes que utiliza el programa. No hace falta instalar librerías adicionales porque Swing y Java2D ya vienen incluidos en Java. Para empezar se debe abrir Eclipse, entrar a File, seleccionar Import, luego General y escoger Existing Projects into Workspace. Después se busca la carpeta donde está guardado el proyecto y se selecciona Finish para importarlo. Una vez esté cargado se debe abrir el paquete uniandes.dpoo.swing.interfaz.principal y buscar la clase VentanaPrincipal.java. Sobre este archivo se hace clic derecho, se selecciona Run As y después Java Application. Al ejecutar el programa aparecerá una ventana con una lista de restaurantes y al seleccionar cualquiera de ellos se podrá ver su nombre, calificación y si ya fue visitado. Para agregar uno nuevo se debe hacer clic en Nuevo, escribir el nombre del restaurante, escoger una calificación del 1 al 5 e indicar si ha sido visitado. También se debe hacer clic sobre el mapa para marcar su ubicación. Cuando estén completos los datos se selecciona Crear restaurante y este aparecerá en la lista principal. Si no se quiere guardar se puede usar el botón Cerrar. Por último, al seleccionar Ver todos se abrirá otra ventana con un mapa donde aparecen los nombres y ubicaciones de los restaurantes. Desde ahí se puede elegir la opción Todos para verlos completos o Visitados para mostrar solamente aquellos que ya se han visitado.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="320" width="700" x="-740" y="1880" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
